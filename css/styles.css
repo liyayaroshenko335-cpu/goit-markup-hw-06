@@ -335,7 +335,19 @@ button {
   max-width: 1440px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
 
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
 
 .hero-container {
   text-align: center;
@@ -357,7 +369,7 @@ button {
   font-weight: 700;
   font-size: 36px;
 
-  /* line-height: 40px; */
+
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
@@ -367,6 +379,29 @@ button {
   margin-right: auto;
   margin-bottom: 72px;
 }
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+
+
+    line-height: 1.07;
+  
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 48px;
+  }
+
+}
+
 
 
 .hero-button {
