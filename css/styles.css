@@ -324,7 +324,7 @@ button {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  /*min-height: 600px;*/
   /*padding-top: 188px;
   padding-bottom: 188px;*/
   padding-top: 72px;
@@ -354,6 +354,10 @@ button {
 
 .hero-container {
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /*.hero-title {
@@ -630,9 +634,22 @@ button {
   padding-bottom: 96px;
 }
 
-.team-container {
- padding: 0 28px;
+@media screen and (min-width: 1158px) {
+  .team-section {
+    
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+  }
 }
+
+.team-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 
 .team-title {
   font-weight: 700;
@@ -655,17 +672,30 @@ button {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+  
   align-items: center;
-  justify-content: flex-start;
+  
   flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  
   gap: 72px;
 } 
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
+    display: flex;
+  }  
+}
 
+@media screen and (min-width: 1158px) {
+  .team-list {
+    gap: 24px;
+   }
+  }
 
 .team-item {
   background-color: #FFFFFF;
@@ -674,11 +704,16 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
   /*width: calc((100% - 72px) / 4);*/
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: 264px;
+  
+}
+
+
+
+@media screen and (min-width: 1158px) {
+   .team-item {
+     width: calc((100% - 72px) / 4);
+   }
 }
 
 /*.team-info {
@@ -691,7 +726,7 @@ button {
 .team-info {
   display: flex;
   align-items: center;
-  justify-content: center;
+  
   flex-direction: column;
   gap: 8px;
   padding: 32px 16px;
@@ -703,8 +738,8 @@ button {
 .team-social-list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  
+  
   gap: 24px;
 }
 
@@ -795,21 +830,52 @@ button {
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 48px;
   
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Дозволяємо перенос */
+    column-gap: 24px;
+    /* Відстань між колонками */
+    row-gap: 72px;
+    /* Відстань між рядами за макетом */
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 48px;
+    /* На десктопі зазори між рядами менші */
+  }
+} 
 .portfolio-item {
-  display: flex;
+  
   /*width: calc((100% - 2 * 24px) / 3);*/
   width: 100%;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  height: auto;
+  
+  
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    /* Розрахунок: (100% - 1 зазор 24px) / 2 */
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio-item {
+    /* Розрахунок: (100% - 2 зазори по 24px) / 3 */
+    width: calc((100% - 48px) / 3);
+  }
 }
 
 
@@ -895,10 +961,15 @@ button {
   padding: 96px 0;
 }
 
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+}
 .footer-container {
   display: flex;
-  /*align-items: baseline;*/
-  width: 100%;
+  flex-wrap: wrap;
+  width: 584px;
   margin: 0 auto;
 
   
@@ -914,6 +985,34 @@ button {
   padding: 0 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    /* Дозволяємо рядки */
+    flex-wrap: wrap;
+    /* Дозволяємо перенос */
+    align-items: baseline;
+    width: 584px;
+    /* Магічне число з макета для центрування сітки */
+    column-gap: 24px;
+    row-gap: 72px;
+  }  
+}
+
+@media screen and (min-width: 1158px) {
+  
+
+  .footer-container {
+    width: 1158px;
+    /* Контейнер на всю ширину */
+    flex-wrap: nowrap;
+    /* Забороняємо перенос */
+    gap: 0;
+    /* Скидаємо загальний gap */
+    align-items: baseline;
+    padding: 0 15px;
+  }
+}    
 /*.footer-info {
   margin-right: 120px;
   height: auto;
@@ -929,6 +1028,24 @@ button {
 .footer-subscribe-container {
   text-align: center;
   /* Центруємо текст всередині блоків */
+}
+
+@media screen and (min-width: 768px) {
+  .footer-info,
+  .footer-social-container,
+  .footer-subscribe-container {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-info{
+    margin-right: 120px;
+  }
+
+  .footer-social-container {
+    margin-right: 80px;
+  }
 }
 
 .footer-logo {
@@ -1019,6 +1136,14 @@ button {
   gap: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
 .footer-subscribe-input {
   /*width: 264px;*/
   width: 288px;
@@ -1032,6 +1157,12 @@ button {
   line-height: 2;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-subscribe-input {
+    width: 264px;
+  }
 }
 
 .footer-subscribe-input::placeholder {
