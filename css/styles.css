@@ -907,6 +907,7 @@ button {
   
   /*padding-top: 80px;
   padding-bottom: 8px;*/
+  /*padding: 96px 180px 338px 180px;*/
   padding: 8px 16px 9px 16px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -915,6 +916,21 @@ button {
   visibility: hidden;
   pointer-events: none;
 }
+
+@media screen and (min-width: 768px) {
+.backdrop {
+  padding: 96px 180px 338px 180px;
+}
+}
+
+@media screen and (min-width: 1158px) {
+  .backdrop {
+    padding-top: 80px;
+    padding-bottom: 8px;
+    
+  }
+}
+
 
 .is-open {
   opacity: 1;
@@ -940,6 +956,19 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%);
 }
+
+@media screen and (min-width: 768px) {
+  .modal {
+    
+    width: 408px;
+    min-height: 584px;
+
+    
+    padding: 72px 24px 24px 24px;
+  }
+}
+
+
 
 .modal-close-btn {
   position: absolute;
