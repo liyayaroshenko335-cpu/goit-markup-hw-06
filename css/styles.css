@@ -1003,9 +1003,10 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: center;
+    /*justify-content: center;*/
     max-width: 768px;
     gap: 72px 24px;
+    padding-left: 108px;
   }  
 }
 
@@ -1135,6 +1136,7 @@ button {
 @media screen and (min-width: 768px) {
   .footer-subscribe-container {
     text-align: left;
+    
   }
 }
 
@@ -1187,7 +1189,7 @@ button {
 
 .footer-subscribe-input {
   /*width: 264px;*/
-  margin: 0 auto;
+  
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
