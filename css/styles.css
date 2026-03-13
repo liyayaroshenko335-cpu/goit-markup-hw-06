@@ -1005,8 +1005,7 @@ button {
     align-items: baseline;
     justify-content: center;
     max-width: 768px;
-    column-gap: 24px;
-    row-gap: 72px;
+    gap: 72px 24px;
   }  
 }
 
@@ -1028,17 +1027,14 @@ button {
   height: auto;
 }*/
 
-.footer-info,
-.footer-social-container {
+.footer-info {
   text-align: center;
   /*margin: 0;*/
   /* Центруємо текст всередині блоків */
 }
 
 @media screen and (min-width: 768px) {
-  .footer-info,
-  .footer-social-container,
-  .footer-subscribe-container {
+  .footer-info {
     text-align: left;
     margin: 0;
   }
@@ -1079,9 +1075,21 @@ button {
   text-align: left;
 }
 
+.footer-social-container {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social-container {
+    text-align: left;
+     
+  }
+}
+
 @media screen and (min-width: 1158px) {
  .footer-social-container {
-   margin-right: 80px;
+  margin-right: 80px;
+  text-align: left;
  }
 }
 
@@ -1119,11 +1127,18 @@ button {
 .footer-social-icon {
   fill: #f4f4fd;
 }
+
 .footer-subscribe-container {
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
+  .footer-subscribe-container {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
   .footer-subscribe-container {
     text-align: left;
   }
@@ -1149,21 +1164,21 @@ button {
   display: flex;
   flex-direction: column;
   /* На мобільних інпут і кнопка один під одним */
-  align-items: center;
+  /*align-items: center;*/
   gap: 16px;
   /*width: 100%;*/
 }
 
 @media screen and (min-width: 768px) {
   .footer-subscribe-form {
-    /*display: flex;*/
+    display: flex;
     flex-direction: row;
     /*align-items: center;*/
     gap: 24px;
   }
 } 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1158px) {
   .footer-subscribe-form {
     display: flex;
     gap: 24px;
