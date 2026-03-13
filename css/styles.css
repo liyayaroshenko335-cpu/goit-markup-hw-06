@@ -331,8 +331,15 @@ button {
   padding-bottom: 72px;
   background-color: #2e2f42;
   color: #ffffff;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-img.jpg');
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-img-1.jpg');
   max-width: 320px;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-img-1@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -351,6 +358,8 @@ button {
      
   }
 }
+
+
 
 .hero-container {
   text-align: center;
