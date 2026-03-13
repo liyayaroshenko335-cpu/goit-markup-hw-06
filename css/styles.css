@@ -981,13 +981,14 @@ button {
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  width: 584px;
+  width: 100%;
+  max-width: 320px;
   margin: 0 auto;
 
   
   
   align-items: center;
-
+  text-align: center;
   flex-direction: column;
   
   
@@ -1004,7 +1005,7 @@ button {
     flex-wrap: wrap;
     /* Дозволяємо перенос */
     align-items: baseline;
-    width: 584px;
+    width: 768px;
     /* Магічне число з макета для центрування сітки */
     column-gap: 24px;
     row-gap: 72px;
@@ -1015,7 +1016,7 @@ button {
   
 
   .footer-container {
-    width: 1158px;
+    width: 1440px;
     /* Контейнер на всю ширину */
     flex-wrap: nowrap;
     /* Забороняємо перенос */
@@ -1146,6 +1147,7 @@ button {
   /* На мобільних інпут і кнопка один під одним */
   align-items: center;
   gap: 16px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1158,7 +1160,8 @@ button {
 
 .footer-subscribe-input {
   /*width: 264px;*/
-  width: 288px;
+  width: 100%;
+  max-width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;
