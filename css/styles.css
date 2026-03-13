@@ -1002,10 +1002,8 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /*align-items: baseline;*/
+    align-items: baseline;
     justify-content: center;
-    
-    
     max-width: 768px;
     column-gap: 24px;
     row-gap: 72px;
@@ -1031,8 +1029,7 @@ button {
 }*/
 
 .footer-info,
-.footer-social-container,
-.footer-subscribe-container {
+.footer-social-container {
   text-align: center;
   /*margin: 0;*/
   /* Центруємо текст всередині блоків */
@@ -1122,7 +1119,15 @@ button {
 .footer-social-icon {
   fill: #f4f4fd;
 }
+.footer-subscribe-container {
+  text-align: center;
+}
 
+@media screen and (min-width: 768px) {
+  .footer-subscribe-container {
+    text-align: left;
+  }
+}
 
 .footer-subscribe-title {
   font-weight: 500;
