@@ -91,8 +91,6 @@ button {
   }
 }
 
-
-
 .header-container {
   display: flex;
   align-items: center;
@@ -114,7 +112,6 @@ button {
   }
 }
 
-
 .mobile-menu-open-icon {
   fill: #2f2f37;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,20 +123,6 @@ button {
   
 }
 
-/*.header-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  margin-right: 76px;
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}*/
-
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -149,8 +132,6 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 149px;
-  /*display: inline-block;*/
- 
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -176,23 +157,16 @@ button {
   }
 }
 
-
-
 .logo-studio {
   color: #2e2f42;
 }
 
-
-
-
 .header-navigation {
   display: flex;
   align-items: center;
-
 }
 
 .navigation-menu-list {
-  /*display: flex;*/
   display: none;
   gap: 40px;
 }
@@ -245,10 +219,6 @@ button {
   color: #404bbf;
 }
 
-/*.header-address {
-   
-}*/
-
 @media screen and (min-width: 1158px){
   .header-address {
     display: block;
@@ -258,11 +228,7 @@ button {
 }
 
 .header-address-list {
-  
   display: none;
-  
-  
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -294,11 +260,6 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  /*padding-top: 24px;
-  padding-bottom: 24px;*/
-  /*font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;*/
   color: #434455;
   font-family: "Roboto Reguiar", sans-serif;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -324,9 +285,6 @@ button {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*min-height: 600px;*/
-  /*padding-top: 188px;
-  padding-bottom: 188px;*/
   padding-top: 72px;
   padding-bottom: 72px;
   background-color: #2e2f42;
@@ -359,8 +317,6 @@ button {
   }
 }
 
-
-
 .hero-container {
   text-align: center;
   width: 100%;
@@ -368,18 +324,6 @@ button {
   padding-left: 16px;
   padding-right: 16px;
 }
-
-/*.hero-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 48px;
-}*/
 
 .hero-title {
   font-weight: 700;
@@ -418,8 +362,6 @@ button {
 
 }
 
-
-
 .hero-button {
   display: block;
   font-weight: 500;
@@ -438,57 +380,21 @@ button {
 
 }
 
-/*.hero-button {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
-  font-weight: 500;
-  font-size: 16px;
-  margin: 0 auto;
-  border: none;
-  
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  
-}*/
-
-
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
 
 /*!=====FEATURES=======================*/
+
 .features section {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+
 .features-container {
-  
   padding: 0 16px;
 }
-
-
-
-/*.features-list {
-  display: flex;
-  
-  gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}*/
 
 .features-list {
   display: flex;
@@ -502,15 +408,12 @@ button {
 
 @media screen and (min-width: 768px) {
   .features-list {
-    
     flex-wrap: wrap;
-    
     column-gap: 24px;
     flex-direction: row;
     row-gap: 72px;
   }
 }
-
 
 @media screen and (min-width: 1158px) {
   .features-list {
@@ -523,12 +426,9 @@ button {
   }
 }
 
-
 .features-item {
-  /*width: calc((100% - 3 * 24px) / 4);*/
   width: 100%;
 } 
-
 
 @media screen and (min-width: 768px) {
   .features-item {
@@ -542,7 +442,6 @@ button {
   }
 }
 
-
 .features-icon {
   width: 64px;
   height: 64px;
@@ -550,9 +449,7 @@ button {
 }
 
 .features-icon-box {
-  /*display: flex;*/
   display: none;
-  
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -567,19 +464,6 @@ button {
     display: flex;
   }
 }
-
-/*.features-icon-box {
-  display: none;
-}*/
-
-/*.features-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}*/
 
 .features-subtitle {
   font-weight: 700;
@@ -609,21 +493,9 @@ button {
   }
 }
 
-/*.features-text {
-  
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  margin: 0;
-}*/
-
 .features-text {
-  
   font-weight: 500;
   font-size: 16px;
-
-  /* line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -645,7 +517,6 @@ button {
 
 @media screen and (min-width: 1158px) {
   .team-section {
-    
     padding-top: 120px;
     padding-bottom: 120px;
     
@@ -659,7 +530,6 @@ button {
   padding-right: 16px;
 }
 
-
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -671,21 +541,10 @@ button {
   margin-bottom: 72px;
 }
 
-
-
-/*.team-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}*/
-
 .team-list {
   display: flex;
-  
   align-items: center;
-  
   flex-direction: column;
-  
   gap: 72px;
 } 
 
@@ -712,12 +571,8 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-  /*width: calc((100% - 72px) / 4);*/
   width: 264px;
-  
 }
-
-
 
 @media screen and (min-width: 1158px) {
    .team-item {
@@ -725,17 +580,9 @@ button {
    }
 }
 
-/*.team-info {
-  padding: 32px 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}*/
-
 .team-info {
   display: flex;
   align-items: center;
-  
   flex-direction: column;
   gap: 8px;
   padding: 32px 16px;
@@ -747,11 +594,8 @@ button {
 .team-social-list {
   display: flex;
   align-items: center;
-  
-  
   gap: 24px;
 }
-
 
 .team-social-item {
   width: 40px;
@@ -791,10 +635,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-
 }
-
-
 
 .team-text {
   font-size: 16px;
@@ -804,14 +645,12 @@ button {
   margin-bottom: 8px;
 }
 
-
-
 /*!====PORTFOLIO==========*/
+
 .portfolio-section {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-
 
 .portfolio-container {
   padding: 0 16px;
@@ -828,31 +667,18 @@ button {
   margin-bottom: 72px;
 }
 
-
-
-/*.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}*/
-
 .portfolio-list {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
-    /* Дозволяємо перенос */
     column-gap: 24px;
-    /* Відстань між колонками */
     row-gap: 72px;
-    /* Відстань між рядами за макетом */
   }
 }
 
@@ -860,34 +686,25 @@ button {
   .portfolio-list {
     column-gap: 24px;
     row-gap: 48px;
-    /* На десктопі зазори між рядами менші */
   }
-} 
-.portfolio-item {
-  
-  /*width: calc((100% - 2 * 24px) / 3);*/
-  width: 100%;
-  
-  
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.portfolio-item {
+  width: 100%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-item {
-    /* Розрахунок: (100% - 1 зазор 24px) / 2 */
     width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .portfolio-item {
-    /* Розрахунок: (100% - 2 зазори по 24px) / 3 */
-    width: calc((100% - 48px) / 3);
+   width: calc((100% - 48px) / 3);
   }
 }
-
-
 
 .portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -909,8 +726,6 @@ button {
   flex-direction: column;
 }
 
-
-
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -920,16 +735,12 @@ button {
   margin-bottom: 8px;
 }
 
-
-
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
-
-
 
 .portfolio-thumb {
   overflow: hidden;
@@ -964,8 +775,6 @@ button {
   border-top: none;
 }
 
-
-
 /*!=======FOOTER==============*/
 
 .footer {
@@ -978,15 +787,6 @@ button {
     padding: 100px 0;
   }
 }
-
-/*.container {
-
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}*/
-
 
 .footer-container {
   display: flex;
@@ -1003,7 +803,6 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    /*justify-content: center;*/
     max-width: 768px;
     gap: 72px 24px;
     padding-left: 108px;
@@ -1018,20 +817,9 @@ button {
     align-items: baseline;
   }
 }    
-/*.footer-info {
-  margin-right: 120px;
-  height: auto;
-}*/
-
-/*.footer-info {
-  
-  height: auto;
-}*/
 
 .footer-info {
   text-align: center;
-  /*margin: 0;*/
-  /* Центруємо текст всередині блоків */
 }
 
 @media screen and (min-width: 768px) {
@@ -1066,7 +854,6 @@ button {
 }
 
 .footer-text {
-  
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -1083,7 +870,6 @@ button {
 @media screen and (min-width: 768px) {
   .footer-social-container {
     text-align: left;
-     
   }
 }
 
@@ -1093,7 +879,6 @@ button {
   text-align: left;
  }
 }
-
 
 .footer-social-title {
   font-weight: 500;
@@ -1136,7 +921,6 @@ button {
 @media screen and (min-width: 768px) {
   .footer-subscribe-container {
     text-align: left;
-    
   }
 }
 
@@ -1154,28 +938,18 @@ button {
   color: #ffffff;
   margin-bottom: 16px;
   width: 100%;
-  /*text-align: center;*/
 }
-
-/*.footer-subscribe-form {
-  display: flex;
-  gap: 24px;
-}*/
 
 .footer-subscribe-form {
   display: flex;
   flex-direction: column;
-  /* На мобільних інпут і кнопка один під одним */
-  /*align-items: center;*/
   gap: 16px;
-  /*width: 100%;*/
 }
 
 @media screen and (min-width: 768px) {
   .footer-subscribe-form {
     display: flex;
     flex-direction: row;
-    /*align-items: center;*/
     gap: 24px;
   }
 } 
@@ -1188,8 +962,6 @@ button {
 }
 
 .footer-subscribe-input {
-  /*width: 264px;*/
-  
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
@@ -1202,8 +974,6 @@ button {
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-
 
 .footer-subscribe-input::placeholder {
   color: #ffffff;
@@ -1238,7 +1008,7 @@ button {
   background-color: #404bbf;
 }
 
-
+/*!=======backdrop==============*/
 
 .backdrop {
   position: fixed;
@@ -1274,10 +1044,6 @@ button {
   }
 }
   
-
-
-
-
 .is-open {
   opacity: 1;
   visibility: visible;
@@ -1313,8 +1079,6 @@ button {
     padding: 72px 24px 24px 24px;
   }
 }
-
-
 
 .modal-close-btn {
   position: absolute;
