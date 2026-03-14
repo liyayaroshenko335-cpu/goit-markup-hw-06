@@ -812,7 +812,7 @@ button {
     flex-wrap: nowrap;
     gap: 0;
     align-items: baseline;
-    padding: 0;
+    padding-left: 16px;
   }
 }    
 
